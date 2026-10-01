@@ -121,10 +121,6 @@ flowchart LR
 - **onedr0p** — [bootstrap/helmfile/](https://github.com/onedr0p/home-ops/tree/main/bootstrap/helmfile)
 - **buroa** — [talos/](https://github.com/buroa/home-ops/tree/main/talos)
 
-**Read**
-
-- [The Shoemaker's Children Aren't Barefoot](https://dev.to/claycavaleiro/the-shoemakers-children-arent-barefoot-3m8h)
-
 ## 03 GitOps
 
 `kubernetes/flux/` · Git is the source of truth. A controller in the cluster makes reality match it.
@@ -370,6 +366,7 @@ Find more on [kubesearch.dev](https://kubesearch.dev), which indexes hundreds of
 ### Blogs
 
 - [Ben Gauger](https://blog.bengauger.com) - Proxmox and OpenTofu.
+- [Clay Cavaleiro](https://dev.to/claycavaleiro) - Talos, Argo CD, and Home Assistant on Raspberry Pi.
 - [Jeff Geerling](https://www.jeffgeerling.com) - Ansible, Raspberry Pi clusters, and hardware.
 - [Nick Cunningham](https://nickcunningh.am/blog) - Homelab and self-hosting write-ups.
 - [noted.lol](https://noted.lol) - Self-hosted app reviews and guides.
