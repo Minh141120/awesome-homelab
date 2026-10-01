@@ -121,6 +121,10 @@ flowchart LR
 - **onedr0p** — [bootstrap/helmfile/](https://github.com/onedr0p/home-ops/tree/main/bootstrap/helmfile)
 - **buroa** — [talos/](https://github.com/buroa/home-ops/tree/main/talos)
 
+**Read**
+
+- [The Shoemaker's Children Aren't Barefoot](https://dev.to/claycavaleiro/the-shoemakers-children-arent-barefoot-3m8h)
+
 ## 03 GitOps
 
 `kubernetes/flux/` · Git is the source of truth. A controller in the cluster makes reality match it.
@@ -338,6 +342,7 @@ The best documentation in this hobby is other people's Git history. Start where 
 | [toboshii/home-ops](https://github.com/toboshii/home-ops) | Flux | A smaller cluster, easier to read end to end |
 | [Mafyuh/iac](https://github.com/Mafyuh/iac) | OpenTofu · Ansible · Kubernetes | [`terraform/`](https://github.com/Mafyuh/iac/tree/main/terraform) |
 | [zimmertr/TJs-Kubernetes-Service](https://github.com/zimmertr/TJs-Kubernetes-Service) | Proxmox · Talos · OpenTofu | Kubernetes on Proxmox, fully automated |
+| [catdevsecops/home-automated-infrastructure](https://github.com/catdevsecops/home-automated-infrastructure) | Raspberry Pi · Talos · Argo CD · Terraform | [`terraform/bootstrap/`](https://github.com/catdevsecops/home-automated-infrastructure/tree/main/terraform/bootstrap), with the [write-up](https://dev.to/claycavaleiro/the-shoemakers-children-arent-barefoot-3m8h) |
 | [christianlempa/homelab](https://github.com/christianlempa/homelab) | Docker · Terraform | Configs behind Christian Lempa's videos |
 | [JamesTurland/JimsGarage](https://github.com/JamesTurland/JimsGarage) | Proxmox · k3s | Scripts behind Jim's Garage videos |
 | [TechHutTV/homelab](https://github.com/TechHutTV/homelab) | Proxmox · Docker | Beginner-friendly guides and Compose files |
