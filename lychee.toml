@@ -2,3 +2,6 @@
 exclude = ["reddit\\.com", "discord\\.gg", "youtube\\.com"]
 accept = ["200..=299", "403", "429"]
 max_retries = 3
+# ponytail: some sites answer GitHub runners slowly; wait and retry before failing
+timeout = 60
+retry_wait_time = 5
