@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" role="img" aria-label="Awesome Homelab">
+  <!-- ponytail: mid-tone colors readable on GitHub light and dark, no theme switching needed -->
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  </style>
+
+  <!-- three-unit rack -->
+  <g transform="translate(24 30)" fill="none" stroke="#8b949e" stroke-width="4">
+    <rect x="2" y="2" width="116" height="34" rx="6"/>
+    <rect x="2" y="44" width="116" height="34" rx="6"/>
+    <rect x="2" y="86" width="116" height="34" rx="6"/>
+    <g stroke-width="3" stroke-linecap="round">
+      <line x1="16" y1="19" x2="56" y2="19"/>
+      <line x1="16" y1="61" x2="56" y2="61"/>
+      <line x1="16" y1="103" x2="56" y2="103"/>
+    </g>
+  </g>
+  <g transform="translate(24 30)">
+    <circle cx="86" cy="19" r="5" fill="#2da44e"/>
+    <circle cx="102" cy="19" r="5" fill="#2da44e"/>
+    <circle cx="86" cy="61" r="5" fill="#2da44e"/>
+    <circle cx="102" cy="61" r="5" fill="#d29922"/>
+    <circle cx="86" cy="103" r="5" fill="#2da44e"/>
+    <circle cx="102" cy="103" r="5" fill="#2da44e"/>
+  </g>
+
+  <text x="172" y="84" font-size="44" font-weight="700"><tspan fill="#8b949e">awesome-</tspan><tspan fill="#2da44e">homelab</tspan></text>
+  <text x="174" y="122" font-size="18" fill="#8b949e">$ git push &amp;&amp; watch it reconcile_</text>
+</svg>
