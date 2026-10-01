@@ -21,8 +21,7 @@ Most homelabs that last end up as a Git repo: every VM, cluster, and app is desc
 This list is organized **like that repo**. Each folder below is a layer you will build, with the free tools for it, links to how experienced homelabbers do it **in the wild**, and what to **read** first.
 Within each layer, the first entries are what most home-ops repos use today.
 
-> [!TIP]
-> **New to this?** Work through 00 to 03 in order, then take one app from [10 Apps](#10-apps) all the way to production before you add a second.
+> [!TIP] > **New to this?** Work through 00 to 03 in order, then take one app from [10 Apps](#10-apps) all the way to production before you add a second.
 
 ## The Map
 
@@ -42,10 +41,10 @@ home-ops/
 └── .github/workflows/       09  CI for your cluster
 ```
 
-| [00 Hardware](#00-hardware) | [01 Infrastructure](#01-infrastructure) | [02 Bootstrap](#02-bootstrap) | [03 GitOps](#03-gitops) |
-|---|---|---|---|
-| [04 Secrets](#04-secrets) | [05 Network](#05-network) | [06 Storage](#06-storage) | [07 Observability](#07-observability) |
-| [08 Identity](#08-identity) | [09 Automation](#09-automation) | [10 Apps](#10-apps) | [Real Repos](#real-repos) |
+| [00 Hardware](#00-hardware) | [01 Infrastructure](#01-infrastructure) | [02 Bootstrap](#02-bootstrap) | [03 GitOps](#03-gitops)               |
+| --------------------------- | --------------------------------------- | ----------------------------- | ------------------------------------- |
+| [04 Secrets](#04-secrets)   | [05 Network](#05-network)               | [06 Storage](#06-storage)     | [07 Observability](#07-observability) |
+| [08 Identity](#08-identity) | [09 Automation](#09-automation)         | [10 Apps](#10-apps)           | [Real Repos](#real-repos)             |
 
 **The loop you are building:**
 
@@ -280,31 +279,31 @@ flowchart LR
 
 `kubernetes/apps/<your-app>/` · The point of all this. For each app, browse dozens of real deployments on [kubesearch.dev](https://kubesearch.dev), then copy the one closest to your setup.
 
-| App | What it does | Real deployments |
-|---|---|---|
-| [Home Assistant](https://www.home-assistant.io) | Home automation | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-home-assistant) · [onedr0p](https://github.com/onedr0p/home-ops/tree/main/kubernetes/apps/default/home-assistant) |
-| [Immich](https://immich.app) | Photo and video backup | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-immich) · [szinn](https://github.com/szinn/k8s-homelab/tree/main/kubernetes/main/apps/media/immich) |
-| [Jellyfin](https://jellyfin.org) | Media server | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-jellyfin) · [bjw-s](https://github.com/bjw-s-labs/home-ops/tree/main/kubernetes/apps/media/jellyfin) |
-| [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) | Document archive with OCR | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-paperless) · [bjw-s](https://github.com/bjw-s-labs/home-ops/tree/main/kubernetes/apps/selfhosted/paperless) |
-| [Vaultwarden](https://github.com/dani-garcia/vaultwarden) | Bitwarden-compatible password manager | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-vaultwarden) |
-| [Nextcloud](https://nextcloud.com) | Files, calendar, and contacts | [kubesearch](https://kubesearch.dev/hr/nextcloud.github.io-helm-nextcloud) · [bjw-s](https://github.com/bjw-s-labs/home-ops/tree/main/kubernetes/apps/selfhosted/nextcloud) |
-| [Audiobookshelf](https://audiobookshelf.org) | Audiobooks and podcasts | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-audiobookshelf) · [bjw-s](https://github.com/bjw-s-labs/home-ops/tree/main/kubernetes/apps/media/audiobookshelf) |
-| [Navidrome](https://www.navidrome.org) | Music streaming | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-navidrome) · [bjw-s](https://github.com/bjw-s-labs/home-ops/tree/main/kubernetes/apps/media/navidrome) |
-| [Frigate](https://frigate.video) | NVR with object detection | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-frigate) · [bjw-s](https://github.com/bjw-s-labs/home-ops/tree/main/kubernetes/apps/home-automation/frigate) |
-| [Zigbee2MQTT](https://www.zigbee2mqtt.io) | Zigbee devices without vendor hubs | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-zigbee2mqtt) · [xunholy](https://github.com/xunholy/k8s-gitops/tree/main/kubernetes/apps/base/home-system/zigbee2mqtt) |
-| [ESPHome](https://esphome.io) | Firmware for DIY sensors | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-esphome) |
-| [Actual](https://actualbudget.org) | Personal budgeting | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-actual) · [bjw-s](https://github.com/bjw-s-labs/home-ops/tree/main/kubernetes/apps/selfhosted/actual) |
-| [Mealie](https://mealie.io) | Recipes and meal planning | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-mealie) |
-| [Karakeep](https://karakeep.app) | Bookmarks with AI tagging | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-karakeep) · [bjw-s](https://github.com/bjw-s-labs/home-ops/tree/main/kubernetes/apps/selfhosted/karakeep) |
-| [Linkding](https://linkding.link) | Minimal bookmark manager | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-linkding) |
-| [Miniflux](https://miniflux.app) | RSS reader | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-miniflux) |
-| [Memos](https://usememos.com) | Lightweight notes | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-memos) |
-| [Syncthing](https://syncthing.net) | Peer-to-peer file sync | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-syncthing) |
-| [Atuin](https://atuin.sh) | Synced shell history | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-atuin) · [onedr0p](https://github.com/onedr0p/home-ops/tree/main/kubernetes/apps/default/atuin) |
-| [Forgejo](https://forgejo.org) | Self-hosted Git forge | [kubesearch](https://kubesearch.dev/hr/code.forgejo.org-forgejo-helm-forgejo) · [bjw-s](https://github.com/bjw-s-labs/home-ops/tree/main/kubernetes/apps/dev/forgejo) |
-| [Open WebUI](https://openwebui.com) | Chat UI for local LLMs | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-open-webui) · [joryirving](https://github.com/joryirving/home-ops/tree/main/kubernetes/apps/base/llm/open-webui) |
-| [Ollama](https://ollama.com) | Run LLMs locally | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-ollama) · [xunholy](https://github.com/xunholy/k8s-gitops/tree/main/kubernetes/apps/base/ai-system/ollama) |
-| [n8n](https://n8n.io) | Workflow automation | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-n8n) · [xunholy](https://github.com/xunholy/k8s-gitops/tree/main/kubernetes/apps/base/ai-system/n8n) |
+| App                                                             | What it does                          | Real deployments                                                                                                                                                                                     |
+| --------------------------------------------------------------- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Home Assistant](https://www.home-assistant.io)                 | Home automation                       | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-home-assistant) · [onedr0p](https://github.com/onedr0p/home-ops/tree/main/kubernetes/apps/default/home-assistant)      |
+| [Immich](https://immich.app)                                    | Photo and video backup                | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-immich) · [szinn](https://github.com/szinn/k8s-homelab/tree/main/kubernetes/main/apps/media/immich)                    |
+| [Jellyfin](https://jellyfin.org)                                | Media server                          | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-jellyfin) · [bjw-s](https://github.com/bjw-s-labs/home-ops/tree/main/kubernetes/apps/media/jellyfin)                   |
+| [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) | Document archive with OCR             | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-paperless) · [bjw-s](https://github.com/bjw-s-labs/home-ops/tree/main/kubernetes/apps/selfhosted/paperless)            |
+| [Vaultwarden](https://github.com/dani-garcia/vaultwarden)       | Bitwarden-compatible password manager | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-vaultwarden)                                                                                                           |
+| [Nextcloud](https://nextcloud.com)                              | Files, calendar, and contacts         | [kubesearch](https://kubesearch.dev/hr/nextcloud.github.io-helm-nextcloud) · [bjw-s](https://github.com/bjw-s-labs/home-ops/tree/main/kubernetes/apps/selfhosted/nextcloud)                          |
+| [Audiobookshelf](https://audiobookshelf.org)                    | Audiobooks and podcasts               | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-audiobookshelf) · [bjw-s](https://github.com/bjw-s-labs/home-ops/tree/main/kubernetes/apps/media/audiobookshelf)       |
+| [Navidrome](https://www.navidrome.org)                          | Music streaming                       | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-navidrome) · [bjw-s](https://github.com/bjw-s-labs/home-ops/tree/main/kubernetes/apps/media/navidrome)                 |
+| [Frigate](https://frigate.video)                                | NVR with object detection             | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-frigate) · [bjw-s](https://github.com/bjw-s-labs/home-ops/tree/main/kubernetes/apps/home-automation/frigate)           |
+| [Zigbee2MQTT](https://www.zigbee2mqtt.io)                       | Zigbee devices without vendor hubs    | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-zigbee2mqtt) · [xunholy](https://github.com/xunholy/k8s-gitops/tree/main/kubernetes/apps/base/home-system/zigbee2mqtt) |
+| [ESPHome](https://esphome.io)                                   | Firmware for DIY sensors              | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-esphome)                                                                                                               |
+| [Actual](https://actualbudget.org)                              | Personal budgeting                    | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-actual) · [bjw-s](https://github.com/bjw-s-labs/home-ops/tree/main/kubernetes/apps/selfhosted/actual)                  |
+| [Mealie](https://mealie.io)                                     | Recipes and meal planning             | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-mealie)                                                                                                                |
+| [Karakeep](https://karakeep.app)                                | Bookmarks with AI tagging             | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-karakeep) · [bjw-s](https://github.com/bjw-s-labs/home-ops/tree/main/kubernetes/apps/selfhosted/karakeep)              |
+| [Linkding](https://linkding.link)                               | Minimal bookmark manager              | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-linkding)                                                                                                              |
+| [Miniflux](https://miniflux.app)                                | RSS reader                            | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-miniflux)                                                                                                              |
+| [Memos](https://usememos.com)                                   | Lightweight notes                     | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-memos)                                                                                                                 |
+| [Syncthing](https://syncthing.net)                              | Peer-to-peer file sync                | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-syncthing)                                                                                                             |
+| [Atuin](https://atuin.sh)                                       | Synced shell history                  | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-atuin) · [onedr0p](https://github.com/onedr0p/home-ops/tree/main/kubernetes/apps/default/atuin)                        |
+| [Forgejo](https://forgejo.org)                                  | Self-hosted Git forge                 | [kubesearch](https://kubesearch.dev/hr/code.forgejo.org-forgejo-helm-forgejo) · [bjw-s](https://github.com/bjw-s-labs/home-ops/tree/main/kubernetes/apps/dev/forgejo)                                |
+| [Open WebUI](https://openwebui.com)                             | Chat UI for local LLMs                | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-open-webui) · [joryirving](https://github.com/joryirving/home-ops/tree/main/kubernetes/apps/base/llm/open-webui)       |
+| [Ollama](https://ollama.com)                                    | Run LLMs locally                      | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-ollama) · [xunholy](https://github.com/xunholy/k8s-gitops/tree/main/kubernetes/apps/base/ai-system/ollama)             |
+| [n8n](https://n8n.io)                                           | Workflow automation                   | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-n8n) · [xunholy](https://github.com/xunholy/k8s-gitops/tree/main/kubernetes/apps/base/ai-system/n8n)                   |
 
 **More apps**
 
@@ -325,26 +324,27 @@ flowchart LR
 
 The best documentation in this hobby is other people's Git history. Start where the last column points.
 
-| Repo | Stack | Start reading at |
-|---|---|---|
-| [onedr0p/home-ops](https://github.com/onedr0p/home-ops) | Talos · Flux · Rook | [`talos/`](https://github.com/onedr0p/home-ops/tree/main/talos), then [`kubernetes/flux/`](https://github.com/onedr0p/home-ops/tree/main/kubernetes/flux) |
-| [bjw-s-labs/home-ops](https://github.com/bjw-s-labs/home-ops) | Talos · Flux · Compose | [`docker/`](https://github.com/bjw-s-labs/home-ops/tree/main/docker) for GitOps without Kubernetes |
-| [buroa/home-ops](https://github.com/buroa/home-ops) | Talos · Flux | [`.renovate/`](https://github.com/buroa/home-ops/tree/main/.renovate) for update automation |
-| [joryirving/home-ops](https://github.com/joryirving/home-ops) | Talos · Flux · OpenTofu | [`terraform/`](https://github.com/joryirving/home-ops/tree/main/terraform) for managing apps as code |
-| [szinn/k8s-homelab](https://github.com/szinn/k8s-homelab) | Talos · Flux | [`kubernetes/main/components/`](https://github.com/szinn/k8s-homelab/tree/main/kubernetes/main/components) |
-| [xunholy/k8s-gitops](https://github.com/xunholy/k8s-gitops) | Talos · Flux | [`kubernetes/components/`](https://github.com/xunholy/k8s-gitops/tree/main/kubernetes/components) |
-| [khuedoan/homelab](https://github.com/khuedoan/homelab) | Argo CD · Ansible | [`metal/`](https://github.com/khuedoan/homelab/tree/master/metal) → [`system/`](https://github.com/khuedoan/homelab/tree/master/system) → [`platform/`](https://github.com/khuedoan/homelab/tree/master/platform) |
-| [billimek/k8s-gitops](https://github.com/billimek/k8s-gitops) | Flux | One of the original Flux home clusters |
-| [toboshii/home-ops](https://github.com/toboshii/home-ops) | Flux | A smaller cluster, easier to read end to end |
-| [Mafyuh/iac](https://github.com/Mafyuh/iac) | OpenTofu · Ansible · Kubernetes | [`terraform/`](https://github.com/Mafyuh/iac/tree/main/terraform) |
-| [zimmertr/TJs-Kubernetes-Service](https://github.com/zimmertr/TJs-Kubernetes-Service) | Proxmox · Talos · OpenTofu | Kubernetes on Proxmox, fully automated |
-| [christianlempa/homelab](https://github.com/christianlempa/homelab) | Docker · Terraform | Configs behind Christian Lempa's videos |
-| [JamesTurland/JimsGarage](https://github.com/JamesTurland/JimsGarage) | Proxmox · k3s | Scripts behind Jim's Garage videos |
-| [TechHutTV/homelab](https://github.com/TechHutTV/homelab) | Proxmox · Docker | Beginner-friendly guides and Compose files |
-| [ironicbadger/infra](https://github.com/ironicbadger/infra) | Ansible · Nix | Infrastructure from the Self-Hosted podcast host |
-| [ryan4yin/nix-config](https://github.com/ryan4yin/nix-config) | Nix | Multi-host flake configuration |
-| [EmergentMind/nix-config](https://github.com/EmergentMind/nix-config) | Nix | Multi-host NixOS configuration |
-| [bradfitz/homelab](https://github.com/bradfitz/homelab) | Notes | Design notes from Tailscale's Brad Fitzpatrick (2020) |
+| Repo                                                                                                        | Stack                                      | Start reading at                                                                                                                                                                                                     |
+| ----------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [onedr0p/home-ops](https://github.com/onedr0p/home-ops)                                                     | Talos · Flux · Rook                        | [`talos/`](https://github.com/onedr0p/home-ops/tree/main/talos), then [`kubernetes/flux/`](https://github.com/onedr0p/home-ops/tree/main/kubernetes/flux)                                                            |
+| [bjw-s-labs/home-ops](https://github.com/bjw-s-labs/home-ops)                                               | Talos · Flux · Compose                     | [`docker/`](https://github.com/bjw-s-labs/home-ops/tree/main/docker) for GitOps without Kubernetes                                                                                                                   |
+| [buroa/home-ops](https://github.com/buroa/home-ops)                                                         | Talos · Flux                               | [`.renovate/`](https://github.com/buroa/home-ops/tree/main/.renovate) for update automation                                                                                                                          |
+| [catdevsecops/home-automated-infrastructure](https://github.com/catdevsecops/home-automated-infrastructure) | Raspberry Pi · Talos · Argo CD · Terraform | [`terraform/bootstrap/`](https://github.com/catdevsecops/home-automated-infrastructure/tree/main/terraform/bootstrap), with the [write-up](https://dev.to/claycavaleiro/the-shoemakers-children-arent-barefoot-3m8h) |
+| [joryirving/home-ops](https://github.com/joryirving/home-ops)                                               | Talos · Flux · OpenTofu                    | [`terraform/`](https://github.com/joryirving/home-ops/tree/main/terraform) for managing apps as code                                                                                                                 |
+| [szinn/k8s-homelab](https://github.com/szinn/k8s-homelab)                                                   | Talos · Flux                               | [`kubernetes/main/components/`](https://github.com/szinn/k8s-homelab/tree/main/kubernetes/main/components)                                                                                                           |
+| [xunholy/k8s-gitops](https://github.com/xunholy/k8s-gitops)                                                 | Talos · Flux                               | [`kubernetes/components/`](https://github.com/xunholy/k8s-gitops/tree/main/kubernetes/components)                                                                                                                    |
+| [khuedoan/homelab](https://github.com/khuedoan/homelab)                                                     | Argo CD · Ansible                          | [`metal/`](https://github.com/khuedoan/homelab/tree/master/metal) → [`system/`](https://github.com/khuedoan/homelab/tree/master/system) → [`platform/`](https://github.com/khuedoan/homelab/tree/master/platform)    |
+| [billimek/k8s-gitops](https://github.com/billimek/k8s-gitops)                                               | Flux                                       | One of the original Flux home clusters                                                                                                                                                                               |
+| [toboshii/home-ops](https://github.com/toboshii/home-ops)                                                   | Flux                                       | A smaller cluster, easier to read end to end                                                                                                                                                                         |
+| [Mafyuh/iac](https://github.com/Mafyuh/iac)                                                                 | OpenTofu · Ansible · Kubernetes            | [`terraform/`](https://github.com/Mafyuh/iac/tree/main/terraform)                                                                                                                                                    |
+| [zimmertr/TJs-Kubernetes-Service](https://github.com/zimmertr/TJs-Kubernetes-Service)                       | Proxmox · Talos · OpenTofu                 | Kubernetes on Proxmox, fully automated                                                                                                                                                                               |
+| [christianlempa/homelab](https://github.com/christianlempa/homelab)                                         | Docker · Terraform                         | Configs behind Christian Lempa's videos                                                                                                                                                                              |
+| [JamesTurland/JimsGarage](https://github.com/JamesTurland/JimsGarage)                                       | Proxmox · k3s                              | Scripts behind Jim's Garage videos                                                                                                                                                                                   |
+| [TechHutTV/homelab](https://github.com/TechHutTV/homelab)                                                   | Proxmox · Docker                           | Beginner-friendly guides and Compose files                                                                                                                                                                           |
+| [ironicbadger/infra](https://github.com/ironicbadger/infra)                                                 | Ansible · Nix                              | Infrastructure from the Self-Hosted podcast host                                                                                                                                                                     |
+| [ryan4yin/nix-config](https://github.com/ryan4yin/nix-config)                                               | Nix                                        | Multi-host flake configuration                                                                                                                                                                                       |
+| [EmergentMind/nix-config](https://github.com/EmergentMind/nix-config)                                       | Nix                                        | Multi-host NixOS configuration                                                                                                                                                                                       |
+| [bradfitz/homelab](https://github.com/bradfitz/homelab)                                                     | Notes                                      | Design notes from Tailscale's Brad Fitzpatrick (2020)                                                                                                                                                                |
 
 Find more on [kubesearch.dev](https://kubesearch.dev), which indexes hundreds of home-ops repos.
 
@@ -365,6 +365,7 @@ Find more on [kubesearch.dev](https://kubesearch.dev), which indexes hundreds of
 ### Blogs
 
 - [Ben Gauger](https://blog.bengauger.com) - Proxmox and OpenTofu.
+- [Clay Cavaleiro](https://dev.to/claycavaleiro) - Talos, Argo CD, and Home Assistant on Raspberry Pi.
 - [Jeff Geerling](https://www.jeffgeerling.com) - Ansible, Raspberry Pi clusters, and hardware.
 - [Nick Cunningham](https://nickcunningh.am/blog) - Homelab and self-hosting write-ups.
 - [noted.lol](https://noted.lol) - Self-hosted app reviews and guides.
