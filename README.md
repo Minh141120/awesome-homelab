@@ -134,7 +134,7 @@ flowchart LR
 
 **In the wild**
 
-- **onedr0p** — [kubernetes/flux/](https://github.com/onedr0p/home-ops/tree/main/kubernetes/flux/cluster)
+- **onedr0p** — [kubernetes/apps/flux-system/](https://github.com/onedr0p/home-ops/tree/main/kubernetes/apps/flux-system)
 - **khuedoan** — [system/ (Argo CD)](https://github.com/khuedoan/homelab/tree/master/system)
 
 **Read**
@@ -271,9 +271,8 @@ flowchart LR
 **In the wild**
 
 - **onedr0p** — [.renovaterc.json5](https://github.com/onedr0p/home-ops/blob/main/.renovaterc.json5)
-- **buroa** — [.renovate/](https://github.com/buroa/home-ops/tree/main/.renovate)
-- **buroa** — [flate workflow](https://github.com/buroa/home-ops/blob/main/.github/workflows/flate.yaml)
-- **xunholy** — [flux-local workflow](https://github.com/xunholy/k8s-gitops/blob/main/.github/workflows/flux-local.yaml)
+- **buroa** — [.renovaterc.json5](https://github.com/buroa/home-ops/blob/main/.renovaterc.json5)
+- **xunholy** — [flate workflow](https://github.com/xunholy/k8s-gitops/blob/main/.github/workflows/flate.yaml)
 
 ## 10 Apps
 
@@ -302,7 +301,7 @@ flowchart LR
 | [Atuin](https://atuin.sh)                                       | Synced shell history                  | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-atuin) · [onedr0p](https://github.com/onedr0p/home-ops/tree/main/kubernetes/apps/default/atuin)                        |
 | [Forgejo](https://forgejo.org)                                  | Self-hosted Git forge                 | [kubesearch](https://kubesearch.dev/hr/code.forgejo.org-forgejo-helm-forgejo) · [bjw-s](https://github.com/bjw-s-labs/home-ops/tree/main/kubernetes/apps/dev/forgejo)                                |
 | [Open WebUI](https://openwebui.com)                             | Chat UI for local LLMs                | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-open-webui) · [joryirving](https://github.com/joryirving/home-ops/tree/main/kubernetes/apps/base/llm/open-webui)       |
-| [Ollama](https://ollama.com)                                    | Run LLMs locally                      | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-ollama) · [xunholy](https://github.com/xunholy/k8s-gitops/tree/main/kubernetes/apps/base/ai-system/ollama)             |
+| [Ollama](https://ollama.com)                                    | Run LLMs locally                      | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-ollama)                                                                                                                |
 | [n8n](https://n8n.io)                                           | Workflow automation                   | [kubesearch](https://kubesearch.dev/hr/ghcr.io-bjw-s-labs-charts-app-template-n8n) · [xunholy](https://github.com/xunholy/k8s-gitops/tree/main/kubernetes/apps/base/ai-system/n8n)                   |
 
 **More apps**
@@ -326,9 +325,9 @@ The best documentation in this hobby is other people's Git history. Start where 
 
 | Repo                                                                                                        | Stack                                      | Start reading at                                                                                                                                                                                                     |
 | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [onedr0p/home-ops](https://github.com/onedr0p/home-ops)                                                     | Talos · Flux · Rook                        | [`talos/`](https://github.com/onedr0p/home-ops/tree/main/talos), then [`kubernetes/flux/`](https://github.com/onedr0p/home-ops/tree/main/kubernetes/flux)                                                            |
+| [onedr0p/home-ops](https://github.com/onedr0p/home-ops)                                                     | Talos · Flux · Rook                        | [`talos/`](https://github.com/onedr0p/home-ops/tree/main/talos), then [`kubernetes/apps/flux-system/`](https://github.com/onedr0p/home-ops/tree/main/kubernetes/apps/flux-system)                                    |
 | [bjw-s-labs/home-ops](https://github.com/bjw-s-labs/home-ops)                                               | Talos · Flux · Compose                     | [`docker/`](https://github.com/bjw-s-labs/home-ops/tree/main/docker) for GitOps without Kubernetes                                                                                                                   |
-| [buroa/home-ops](https://github.com/buroa/home-ops)                                                         | Talos · Flux                               | [`.renovate/`](https://github.com/buroa/home-ops/tree/main/.renovate) for update automation                                                                                                                          |
+| [buroa/home-ops](https://github.com/buroa/home-ops)                                                         | Talos · Flux                               | [`.renovaterc.json5`](https://github.com/buroa/home-ops/blob/main/.renovaterc.json5) for update automation                                                                                                           |
 | [catdevsecops/home-automated-infrastructure](https://github.com/catdevsecops/home-automated-infrastructure) | Raspberry Pi · Talos · Argo CD · Terraform | [`terraform/bootstrap/`](https://github.com/catdevsecops/home-automated-infrastructure/tree/main/terraform/bootstrap), with the [write-up](https://dev.to/claycavaleiro/the-shoemakers-children-arent-barefoot-3m8h) |
 | [joryirving/home-ops](https://github.com/joryirving/home-ops)                                               | Talos · Flux · OpenTofu                    | [`terraform/`](https://github.com/joryirving/home-ops/tree/main/terraform) for managing apps as code                                                                                                                 |
 | [szinn/k8s-homelab](https://github.com/szinn/k8s-homelab)                                                   | Talos · Flux                               | [`kubernetes/main/components/`](https://github.com/szinn/k8s-homelab/tree/main/kubernetes/main/components)                                                                                                           |
