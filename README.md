@@ -21,7 +21,8 @@ Most homelabs that last end up as a Git repo: every VM, cluster, and app is desc
 This list is organized **like that repo**. Each folder below is a layer you will build, with the free tools for it, links to how experienced homelabbers do it **in the wild**, and what to **read** first.
 Within each layer, the first entries are what most home-ops repos use today.
 
-> [!TIP] > **New to this?** Work through 00 to 03 in order, then take one app from [10 Apps](#10-apps) all the way to production before you add a second.
+> [!TIP]
+> **New to this?** Work through 00 to 03 in order, then take one app from [10 Apps](#10-apps) all the way to production before you add a second.
 
 ## The Map
 
