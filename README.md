@@ -10,6 +10,7 @@ Free tools, real configs, and learning materials for self-hosting with GitOps.
 [![License: MIT](https://img.shields.io/badge/license-MIT-2da44e)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-2da44e)](CONTRIBUTING.md)
 [![Links](https://github.com/Minh141120/awesome-homelab/actions/workflows/lint.yml/badge.svg)](https://github.com/Minh141120/awesome-homelab/actions/workflows/lint.yml)
+[![Greptile: The War on Bugs](https://www.greptile.com/badge.svg)](https://www.greptile.com/?utm_source=oss_badge&utm_medium=readme&utm_campaign=greptile_for_open_source)
 
 [The Map](#the-map) · [App Cookbook](#10-apps) · [Real Repos](#real-repos) · [Explore](#explore) · [Community](#community)
 
