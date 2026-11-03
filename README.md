@@ -239,6 +239,7 @@ flowchart LR
 - [kromgo](https://github.com/home-operations/kromgo) - README badges from PromQL queries.
 - [Uptime Kuma](https://github.com/louislam/uptime-kuma) - Uptime monitoring with a web UI.
 - [Homepage](https://gethomepage.dev) - Dashboard with service widgets and Kubernetes discovery.
+- [unlisted](https://github.com/kd-011/unlisted) - Compares a registry of the services you run with what cloudflared, Caddy, nginx, Docker and listening ports expose.
 
 **In the wild**
 
