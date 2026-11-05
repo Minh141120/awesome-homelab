@@ -372,6 +372,7 @@ Find more on [kubesearch.dev](https://kubesearch.dev), which indexes hundreds of
 - [Jeff Geerling](https://www.jeffgeerling.com) - Ansible, Raspberry Pi clusters, and hardware.
 - [Nick Cunningham](https://nickcunningh.am/blog) - Homelab and self-hosting write-ups.
 - [noted.lol](https://noted.lol) - Self-hosted app reviews and guides.
+- [Open Source Analytics](https://opensource-analytics.com) - Guides on self-hosted and privacy-friendly web analytics.
 - [Pim Widdershoven](https://www.pimwiddershoven.nl) - Talos, Kubernetes, and storage.
 - [Techno Tim Docs](https://technotim.com) - Copy-paste configs for Techno Tim videos.
 - [The Thought Process](https://thethoughtprocess.xyz/en/series/home-server/) - A home server series built on k3s.
