@@ -241,6 +241,7 @@ flowchart LR
 - [Uptime Kuma](https://github.com/louislam/uptime-kuma) - Uptime monitoring with a web UI.
 - [Homepage](https://gethomepage.dev) - Dashboard with service widgets and Kubernetes discovery.
 - [unlisted](https://github.com/kd-011/unlisted) - Compares a registry of the services you run with what cloudflared, Caddy, nginx, Docker and listening ports expose.
+- [Homepad](https://github.com/finish06/homepad) - Multi-user start page with live status from Gatus.
 
 **In the wild**
 
