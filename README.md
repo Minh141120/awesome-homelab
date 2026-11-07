@@ -69,6 +69,7 @@ flowchart LR
 - [geerlingguy/sbc-reviews](https://github.com/geerlingguy/sbc-reviews) - Benchmarks and power data for single-board computers.
 - [Matt Gadient: 7 W Idle Server](https://mattgadient.com/7-watts-idle-on-intel-12th-13th-gen-the-foundation-for-building-a-low-power-server-nas) - Low-power build guide covering C-states and ASPM.
 - [Powertop](https://wiki.archlinux.org/title/Powertop) - Diagnose and tune idle power consumption.
+- [Sharpest system builder](https://sharpest.ai/build) - Price a home server, NAS or mini PC parts list from current new and used eBay listings.
 
 ## 01 Infrastructure
 
