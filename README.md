@@ -70,6 +70,7 @@ flowchart LR
 - [Matt Gadient: 7 W Idle Server](https://mattgadient.com/7-watts-idle-on-intel-12th-13th-gen-the-foundation-for-building-a-low-power-server-nas) - Low-power build guide covering C-states and ASPM.
 - [Powertop](https://wiki.archlinux.org/title/Powertop) - Diagnose and tune idle power consumption.
 - [Sharpest system builder](https://sharpest.ai/build) - Price a home server, NAS or mini PC parts list from current new and used eBay listings.
+- [Homelab Power & Cost Calculator](https://techfuelhq.com/tools/power-cost-calculator/) - Estimate monthly, annual, and three-year electricity cost from device idle/load watts and local tariff.
 
 ## 01 Infrastructure
 
