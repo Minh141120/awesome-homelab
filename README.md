@@ -186,6 +186,7 @@ flowchart LR
 - [Headscale](https://headscale.net) - Self-hosted Tailscale control server.
 - [NetBird](https://github.com/netbirdio/netbird) - Open-source, self-hostable WireGuard mesh VPN.
 - [Pangolin](https://github.com/fosrl/pangolin) - Self-hosted tunneled reverse proxy with SSO.
+- [Corvus](https://github.com/corvus-gateway/corvus) - Reverse proxy with a web console, Let's Encrypt, WAF rules and automatic IP bans.
 - [WireGuard](https://www.wireguard.com) - Fast, modern VPN protocol.
 - [OPNsense](https://opnsense.org) - Open-source firewall and router.
 - [pfSense CE](https://www.pfsense.org) - FreeBSD-based firewall and router.
