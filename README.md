@@ -244,6 +244,7 @@ flowchart LR
 - [unlisted](https://github.com/kd-011/unlisted) - Compares a registry of the services you run with what cloudflared, Caddy, nginx, Docker and listening ports expose.
 - [iotaudit](https://github.com/emirmrkaljevic/iotaudit) - Local, consent-first audit of what smart home devices on your own network send, with per-device grades and HTML reports.
 - [Homepad](https://github.com/finish06/homepad) - Multi-user start page with live status from Gatus.
+- [SolidPing](https://github.com/fclairamb/solidping) - Uptime monitoring with status pages and heartbeat checks, packaged as an OCI Helm chart with an optional CloudNativePG database.
 
 **In the wild**
 
