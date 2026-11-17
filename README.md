@@ -187,6 +187,7 @@ flowchart LR
 - [NetBird](https://github.com/netbirdio/netbird) - Open-source, self-hostable WireGuard mesh VPN.
 - [Pangolin](https://github.com/fosrl/pangolin) - Self-hosted tunneled reverse proxy with SSO.
 - [Corvus](https://github.com/corvus-gateway/corvus) - Reverse proxy with a web console, Let's Encrypt, WAF rules and automatic IP bans.
+- [Zorven](https://github.com/tkodcumpeg4/zorven) - Self-hostable reverse proxy and outbound tunnel for exposing homelab services behind CGNAT.
 - [WireGuard](https://www.wireguard.com) - Fast, modern VPN protocol.
 - [OPNsense](https://opnsense.org) - Open-source firewall and router.
 - [pfSense CE](https://www.pfsense.org) - FreeBSD-based firewall and router.
