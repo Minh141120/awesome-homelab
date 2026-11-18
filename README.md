@@ -71,6 +71,7 @@ flowchart LR
 - [Powertop](https://wiki.archlinux.org/title/Powertop) - Diagnose and tune idle power consumption.
 - [Sharpest system builder](https://sharpest.ai/build) - Price a home server, NAS or mini PC parts list from current new and used eBay listings.
 - [Homelab Power & Cost Calculator](https://techfuelhq.com/tools/power-cost-calculator/) - Estimate monthly, annual, and three-year electricity cost from device idle/load watts and local tariff.
+- [PrintableRacks](https://printableracks.com) - Plan a 10-inch mini rack in 3D and check that switches, mini PCs, and shelves fit the frame before buying or printing.
 
 ## 01 Infrastructure
 
