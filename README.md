@@ -92,6 +92,7 @@ flowchart LR
 - [Incus](https://linuxcontainers.org/incus/) - Community fork of LXD for system containers and VMs.
 - [Harvester](https://harvesterhci.io) - Open-source HCI built on Kubernetes, KubeVirt, and Longhorn.
 - [TrueNAS](https://www.truenas.com) - ZFS-based NAS operating system.
+- [VirtoMir](https://github.com/onurbaydas/VirtoMir) - Web UI for KVM, QEMU and libvirt that installs on an existing Linux host, with an Ansible collection and a Terraform provider.
 
 **In the wild**
 
