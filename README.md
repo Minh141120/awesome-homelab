@@ -249,6 +249,7 @@ flowchart LR
 - [iotaudit](https://github.com/emirmrkaljevic/iotaudit) - Local, consent-first audit of what smart home devices on your own network send, with per-device grades and HTML reports.
 - [Homepad](https://github.com/finish06/homepad) - Multi-user start page with live status from Gatus.
 - [SolidPing](https://github.com/fclairamb/solidping) - Uptime monitoring with status pages and heartbeat checks, packaged as an OCI Helm chart with an optional CloudNativePG database.
+- [homelab-doctor](https://github.com/alessio1999xx-debug/homelab-doctor-lite) - Read-only, one-command health check for a single host that reports stale container images, exposed ports, expiring certificates, silent cron jobs, and disk usage.
 
 **In the wild**
 
