@@ -250,6 +250,7 @@ flowchart LR
 - [iotaudit](https://github.com/emirmrkaljevic/iotaudit) - Local, consent-first audit of what smart home devices on your own network send, with per-device grades and HTML reports.
 - [Homepad](https://github.com/finish06/homepad) - Multi-user start page with live status from Gatus.
 - [SolidPing](https://github.com/fclairamb/solidping) - Uptime monitoring with status pages and heartbeat checks, packaged as an OCI Helm chart with an optional CloudNativePG database.
+- [SiteWatcher](https://github.com/NikKurkov/sitewatcher) - Website uptime and response-time monitoring with TLS and domain expiry checks and public status pages.
 - [favicons](https://github.com/peleda-app/favicons) - Self-hostable service that returns any website's icon, or an icon from packs such as Dashboard Icons and selfh.st, as a sandboxed SVG for dashboard tiles.
 
 **In the wild**
