@@ -92,6 +92,7 @@ flowchart LR
 - [Incus](https://linuxcontainers.org/incus/) - Community fork of LXD for system containers and VMs.
 - [Harvester](https://harvesterhci.io) - Open-source HCI built on Kubernetes, KubeVirt, and Longhorn.
 - [TrueNAS](https://www.truenas.com) - ZFS-based NAS operating system.
+- [VirtoMir](https://github.com/onurbaydas/VirtoMir) - Web UI for KVM, QEMU and libvirt that installs on an existing Linux host, with an Ansible collection and a Terraform provider.
 
 **In the wild**
 
@@ -249,6 +250,8 @@ flowchart LR
 - [iotaudit](https://github.com/emirmrkaljevic/iotaudit) - Local, consent-first audit of what smart home devices on your own network send, with per-device grades and HTML reports.
 - [Homepad](https://github.com/finish06/homepad) - Multi-user start page with live status from Gatus.
 - [SolidPing](https://github.com/fclairamb/solidping) - Uptime monitoring with status pages and heartbeat checks, packaged as an OCI Helm chart with an optional CloudNativePG database.
+- [SiteWatcher](https://github.com/NikKurkov/sitewatcher) - Website uptime and response-time monitoring with TLS and domain expiry checks and public status pages.
+- [favicons](https://github.com/peleda-app/favicons) - Self-hostable service that returns any website's icon, or an icon from packs such as Dashboard Icons and selfh.st, as a sandboxed SVG for dashboard tiles.
 - [homelab-doctor](https://github.com/alessio1999xx-debug/homelab-doctor-lite) - Read-only, one-command health check for a single host that reports stale container images, exposed ports, expiring certificates, silent cron jobs, and disk usage.
 
 **In the wild**
