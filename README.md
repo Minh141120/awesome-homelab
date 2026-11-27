@@ -252,6 +252,7 @@ flowchart LR
 - [SolidPing](https://github.com/fclairamb/solidping) - Uptime monitoring with status pages and heartbeat checks, packaged as an OCI Helm chart with an optional CloudNativePG database.
 - [SiteWatcher](https://github.com/NikKurkov/sitewatcher) - Website uptime and response-time monitoring with TLS and domain expiry checks and public status pages.
 - [favicons](https://github.com/peleda-app/favicons) - Self-hostable service that returns any website's icon, or an icon from packs such as Dashboard Icons and selfh.st, as a sandboxed SVG for dashboard tiles.
+- [homelab-doctor](https://github.com/alessio1999xx-debug/homelab-doctor-lite) - Read-only, one-command health check for a single host that reports stale container images, exposed ports, expiring certificates, silent cron jobs, and disk usage.
 
 **In the wild**
 
